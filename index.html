@@ -61,7 +61,7 @@
         cursor: pointer;
       }
 
-      .back:focus-visible, .menu:focus-visible, .download:focus-visible, .open-link:focus-visible {
+      .back:focus-visible, .menu:focus-visible, .download:focus-visible {
         outline: 3px solid rgba(44, 97, 202, 0.25);
         outline-offset: 3px;
       }
@@ -123,23 +123,6 @@
         right: 36px;
         height: 3px;
         background: var(--blue);
-      }
-
-      .eyebrow {
-        margin: 0 0 12px;
-        color: var(--blue);
-        font-family: "Avenir Next", "PingFang SC", sans-serif;
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0;
-      }
-
-      h2 {
-        margin: 0 0 26px;
-        font-size: 25px;
-        line-height: 1.35;
-        font-weight: 700;
-        letter-spacing: 0;
       }
 
       .download {
@@ -205,15 +188,6 @@
 
       .notice strong { color: #4d596e; font-weight: 600; }
 
-      .open-link {
-        display: inline-block;
-        margin-top: 13px;
-        color: var(--blue);
-        font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
-        font-size: 14px;
-        text-underline-offset: 3px;
-      }
-
       @keyframes rise {
         from { opacity: 0; transform: translateY(12px); }
         to { opacity: 1; transform: translateY(0); }
@@ -224,7 +198,6 @@
         main { align-items: flex-end; padding: 24px 16px max(34px, env(safe-area-inset-bottom)); }
         .report-card { padding: 32px 24px 28px; }
         .report-card::before { left: 24px; right: 24px; }
-        h2 { font-size: 23px; margin-bottom: 23px; }
         .download { min-height: 61px; font-size: 20px; }
         .notice { font-size: 15px; line-height: 1.85; }
       }
@@ -244,15 +217,12 @@
       </header>
 
       <main>
-        <section class="report-card" aria-labelledby="report-title">
-          <p class="eyebrow">DOCUMENT DOWNLOAD</p>
-          <h2 id="report-title">报告文件已准备就绪</h2>
+        <section class="report-card" aria-label="PDF 报告下载">
           <a class="download" href="assets/AJDA226W00931.pdf" download="AJDA226W00931.pdf">
             <span>点击下载PDF报告书</span><span class="download-mark" aria-hidden="true"></span>
           </a>
           <div class="divider" aria-hidden="true"></div>
           <p class="notice"><strong>声明：</strong>部分手机默认浏览器可能无法完整显示电子印章。建议使用支持 PDF 阅读的浏览器打开或下载后查看。电子版与纸质版报告的骑缝章位置可能不同，不影响文件内容的完整性。</p>
-          <a class="open-link" href="assets/AJDA226W00931.pdf" target="_blank" rel="noopener">无法下载？在新页面中打开 PDF</a>
         </section>
       </main>
     </div>
